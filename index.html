@@ -148,7 +148,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/12/learn-the-hexo/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/14/Learn-the-Kilo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -162,7 +162,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/04/12/learn-the-hexo/" class="post-title-link" itemprop="url">learn the hexo</a>
+            <a href="/2022/04/14/Learn-the-Kilo/" class="post-title-link" itemprop="url">Learn the Kilo</a>
         </h2>
 
         <div class="post-meta">
@@ -173,7 +173,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-04-12 14:21:06 / Modified: 15:59:58" itemprop="dateCreated datePublished" datetime="2022-04-12T14:21:06+08:00">2022-04-12</time>
+              <time title="Created: 2022-04-14 11:55:41 / Modified: 11:59:14" itemprop="dateCreated datePublished" datetime="2022-04-14T11:55:41+08:00">2022-04-14</time>
             </span>
 
           
@@ -187,44 +187,80 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="Hexo搭建流程"><a href="#Hexo搭建流程" class="headerlink" title="Hexo搭建流程"></a>Hexo搭建流程</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># 1. Installation</span><br><span class="line">$ npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line"># 2. Setup your blog</span><br><span class="line"># 方法 1:</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ cd blog</span><br><span class="line"># 方法 2:</span><br><span class="line">$ mkdir blog</span><br><span class="line">$ cd blog</span><br><span class="line">$ hexo init</span><br><span class="line"></span><br><span class="line"># 3. Start the server</span><br><span class="line">$ hexo server</span><br><span class="line"># 或者 hexo s</span><br><span class="line"></span><br><span class="line"># 4. Create a new post</span><br><span class="line">$ hexo new &quot;Hello Hexo&quot;</span><br><span class="line"></span><br><span class="line"># 5. Generate static files</span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+          <h3 id="Learn-the-Kilo"><a href="#Learn-the-Kilo" class="headerlink" title="Learn the Kilo"></a>Learn the Kilo</h3><hr>
+<p><em>tips:(steps to learn the code)</em></p>
+<p><em>1. overall reading</em></p>
+<p><em>goals:</em></p>
+<ul>
+<li><p><em>to get the purpose of the project;</em></p>
+</li>
+<li><p><em>to get the frame of the project;</em></p>
+</li>
+</ul>
+<p><em>2. run the project</em></p>
+<p><em>goals:</em></p>
+<ul>
+<li><em>to get the operating environment of the project</em></li>
+<li><em>to help us understand the project better</em></li>
+</ul>
+<p><em>3. divide the code</em></p>
+<p><em>goals:</em></p>
+<ul>
+<li><em>to learn the code more efficiently</em></li>
+</ul>
+<p><em>4. read the code</em></p>
+<p><em>methods:</em></p>
+<ul>
+<li><em>learn the code part by part(defined by function)</em></li>
+<li><em>learn the core code first</em></li>
+<li><em>postpone the complex algorithm</em></li>
+</ul>
+<hr>
+<h4 id="1-Overall-Reading"><a href="#1-Overall-Reading" class="headerlink" title="1.Overall Reading"></a>1.Overall Reading</h4><ul>
+<li><h6 id="the-purpose-of-kilo"><a href="#the-purpose-of-kilo" class="headerlink" title="the purpose of kilo"></a>the purpose of kilo</h6><p>the kilo is a small text editor (like a simplified vim) with three basic functions:</p>
+<table>
+<thead>
+<tr>
+<th align="center">CTRL+S</th>
+<th align="center">CTRL+Q</th>
+<th align="center">CTRL+F</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Save the file</td>
+<td align="center">Quit</td>
+<td align="center">Search string in the file</td>
+</tr>
+</tbody></table>
+</li>
+<li><h6 id="the-frame-of-kilo"><a href="#the-frame-of-kilo" class="headerlink" title="the frame of kilo"></a>the frame of kilo</h6><p>​    <em>tips: read the function main to get the first sight of the frame</em></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> **argv)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (argc != <span class="number">2</span>) &#123;</span><br><span class="line">        <span class="built_in">fprintf</span>(<span class="built_in">stderr</span>,<span class="string">&quot;Usage: kilo &lt;filename&gt;\n&quot;</span>);</span><br><span class="line">        <span class="built_in">exit</span>(<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    initEditor();</span><br><span class="line">    editorSelectSyntaxHighlight(argv[<span class="number">1</span>]);</span><br><span class="line">    editorOpen(argv[<span class="number">1</span>]);</span><br><span class="line">    enableRawMode(STDIN_FILENO);</span><br><span class="line">    editorSetStatusMessage(</span><br><span class="line">        <span class="string">&quot;HELP: Ctrl-S = save | Ctrl-Q = quit | Ctrl-F = find&quot;</span>);</span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>) &#123;</span><br><span class="line">        editorRefreshScreen();</span><br><span class="line">        editorProcessKeypress(STDIN_FILENO);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-<h4 id="流程详解"><a href="#流程详解" class="headerlink" title="流程详解"></a>流程详解</h4><blockquote>
-<h6 id="1-hexo-init"><a href="#1-hexo-init" class="headerlink" title="1. hexo init"></a>1. hexo init</h6><p>等价于两行shell指令。</p>
-</blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">1. Cloning hexo-starter to blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git <span class="built_in">clone</span> --recursive https://github.com/hexojs/hexo-starter.git blog</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">2. Install dependencies</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install --production</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<ol>
-<li>git clone –recursive <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-starter.git">https://github.com/hexojs/hexo-starter.git</a> blog </li>
-</ol>
-<p>  将仓库中的全部内容复制到当前文件夹下，相当于配置当前文件夹。注意如果使用 hexo init ,指的是配置当前所在的文件夹，并且要使得当前文件夹为空，如果使用的是 hexo init blog 则是创建一个新的文件夹 blog 并配置。配置是指创建一些基础默认的文件和文件夹。</p>
-<ol start="2">
-<li>npm install –production</li>
-</ol>
-<p>详解：</p>
-<p>hexo</p>
-</blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">which</span> hexo</span></span><br><span class="line">/usr/local/bin/hexo</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cat</span> /usr/local/bin/hexo</span></span><br><span class="line">&#x27;use strict&#x27;;</span><br><span class="line">require(&#x27;../lib/hexo&#x27;)();</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>这里的 hexo 命令是 nodejs 脚本，原来的 /usr/local/bin/hexo 是一个链接符号，链接到 nodejs 的 modules 目录中。</p>
-</blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">ls</span> -l /usr/local/bin/hexo</span>                                                                                 </span><br><span class="line">/usr/local/bin/hexo -&gt; ../lib/node_modules/hexo-cli/bin/hexo</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>即 hexo 命令对应的是/usr/local/lib/node_modules/hexo-cli/bin/hexo.js文件。</p>
-<p>而 init 对应的是 node_modules/hexo-cli/lib/console/ 下的四个原始 .js 文件</p>
-</blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">ls</span> /usr/local/lib/node_modules/hexo-cli/lib/console</span>              </span><br><span class="line">help.js		index.js	init.js		version.js</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>init.js 的核心代码</p>
-</blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="variable constant_">GIT_REPO_URL</span> = <span class="string">&#x27;https://github.com/hexojs/hexo-starter.git&#x27;</span>;</span><br><span class="line"><span class="comment">// 1. git clone --recursive https://github.com/hexojs/hexo-starter.git blog</span></span><br><span class="line">log.<span class="title function_">info</span>(<span class="string">&#x27;Cloning hexo-starter to&#x27;</span></span><br><span class="line"><span class="title function_">spawn</span>(<span class="string">&#x27;git&#x27;</span>, [<span class="string">&#x27;clone&#x27;</span>, <span class="string">&#x27;--recursive&#x27;</span>, <span class="variable constant_">GIT_REPO_URL</span>, target]);</span><br><span class="line"><span class="title function_">removeGitDir</span>(target);</span><br><span class="line"><span class="title function_">removeGitModules</span>(target);</span><br><span class="line"><span class="comment">// 2. npm install --production</span></span><br><span class="line">log.<span class="title function_">info</span>(<span class="string">&#x27;Install dependencies&#x27;</span>);</span><br><span class="line"><span class="title function_">spawn</span>(npmCommand, [<span class="string">&#x27;install&#x27;</span>, <span class="string">&#x27;--production&#x27;</span>]);</span><br></pre></td></tr></table></figure>
-
+<ul>
+<li>input from the terminal<ul>
+<li>to note the correct input format : “Usage: kilo <filename>“</li>
+</ul>
+</li>
+<li><h2 id="initEditor"><a href="#initEditor" class="headerlink" title="initEditor"></a>initEditor</h2></li>
+</ul>
+<ul>
+<li><p>editorSelectSyntaxHighlight</p>
+</li>
+<li><p>editorOpen</p>
+</li>
+<li><p>enableRawMode</p>
+</li>
+<li><p>editorSetStatusMessage</p>
+<p>identify the suffix of the file to detemine the format the file is based on.</p>
+</li>
+</ul>
+<ul>
+<li>editorRefreshScreen</li>
+<li>editorProcessKeypress</li>
+</ul>
+</li>
+</ul>
+<p><img src="../image/kilo_frame.jpg"></p>
 
       
     </div>
@@ -309,10 +345,6 @@
           <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span>
       </div>
   </nav>
 </div>
